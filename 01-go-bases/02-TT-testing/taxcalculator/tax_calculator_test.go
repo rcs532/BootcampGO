@@ -17,12 +17,12 @@ import (
 
 func TestCalculadoraDeImpuestos(t *testing.T){
 	t.Run("Calcular impuesto cuando el salario es menor a 50000", func(t *testing.T){
-	salario := 70000.0
-	expectedResult := 11900.0
+		salario := 70000.0
+		expectedResult := 11900.0
 
-	obtainedResult := CalcularImpuesto(salario)
+		obtainedResult := CalcularImpuesto(salario)
 
-	assert.Equal(t, expectedResult, obtainedResult, "El impuesto calculado no es el esperado")
+		assert.Equal(t, expectedResult, obtainedResult, "El impuesto calculado no es el esperado")
 	})
 	t.Run("Calcular impuesto cuando el salario es mayor a 50000 y menor a 150000", func(t *testing.T){
 		salario := 70000.0

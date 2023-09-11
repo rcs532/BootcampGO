@@ -14,12 +14,12 @@ import (
 
 func TestCalcularPromedio(t *testing.T){
 	t.Run("Calcular promedio de notas", func(t *testing.T){
-	notas:= []int{10, 20, 30, 40, 50}
-	expectedResult := 30.0
+		notas:= []int{10, 20, 30, 40, 50}
+		expectedResult := 30.0
 
-	obtainResult, _ := CalcularPromedios(notas...)
+		obtainResult, _ := CalcularPromedios(notas...)
 
-	assert.Equal(t, expectedResult, obtainResult)
+		assert.Equal(t, expectedResult, obtainResult)
 
 	})
 	t.Run("Calcular promedio de notas con error", func(t *testing.T){
